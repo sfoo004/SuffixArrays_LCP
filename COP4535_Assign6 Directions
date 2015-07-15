@@ -1,0 +1,29 @@
+Assignment #6: Suffix Arrays and LCP
+In this assignment you will read files containing text.
+
+For each file, read the text into a string. However, you should keep a mapping from the original file into the converted string so that you can output answers to the following question:
+
+For k=2, 3, ..., 10, what is the longest string that occurs k times? Note: if the input is aaaaa, the longest string that occurs twice is aaaa.
+
+You may use and/or modify the SuffixArray.java code to compute suffix arrays and LCPs.
+
+As usual, submit complete source code (in a Netbeans folder, ready to run), along with output for the files I will provide.
+
+For example, if this input file is
+
+AAAB
+AABA
+ABBB
+Output would look something like
+
+Longest sequence that occurs 2 times has basic length 6 and is AABAAB
+Occurrence #1 starts at line 1
+Occurrence #2 starts at line 2
+
+Longest sequence that occurs 3 times has basic length 3 and is AAB
+Occurrence #1 starts at line 1
+Occurrence #2 starts at line 2
+Occurrence #3 starts at line 2
+
+...
+As usual, if the basic length is longer than 50 characters, output the first 20 characters, then ..., then the last 20 characters. Note also that there may be no string that occurs k times for a large k. Your code should handle that.
